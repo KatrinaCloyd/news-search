@@ -9,7 +9,7 @@ import NewsSearchPage from './NewsSearchPage';
 describe('news search page', () => {
     it('displays a list of news articles, updating results based on user input', async () => {
         render(<NewsSearchPage />);
-        screen.getByText('One Moment Please');
+        screen.getByAltText('loading');
 
         const list = await screen.findByRole('list', { name: 'article-list' });
         expect(list).not.toBeEmptyDOMElement();

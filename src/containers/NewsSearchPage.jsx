@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ArticleList from '../components/search/ArticleList';
+import Loading from '../components/search/Loading';
 import SearchForm from '../components/search/SearchForm';
 import { fetchNewsArticles, fetchNewsSearch } from '../services/newsApi';
 
@@ -34,7 +35,7 @@ export default class NewsSearchPage extends Component {
 
     render() {
         if (this.state.loading)
-            return <div>One Moment Please</div>;
+            return <Loading />;
         return (
             <>
                 <SearchForm
