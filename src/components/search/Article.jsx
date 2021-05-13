@@ -6,7 +6,7 @@ export default function Article({ title, author, snip, source, link }) {
         <div>
             <h3>{title}</h3>
             <h4>{author} - {source}</h4>
-            <a href={link}>Full Article</a>
+            <a href={link} target='_blank'>Full Article</a>
             <p>{snip}</p>
             <hr />
         </div>

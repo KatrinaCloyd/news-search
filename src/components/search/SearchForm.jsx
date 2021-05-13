@@ -5,8 +5,9 @@ export default function SearchForm({ search, onSearchChange, onSubmit }) {
         <form onSubmit={onSubmit}>
             <label htmlFor="search-term">Search:</label>
             <input
-                id="search"
+                id="search-term"
                 type="text"
+                role="textbox"
                 value={search}
                 onChange={onSearchChange}
             />
