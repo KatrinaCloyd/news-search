@@ -1,6 +1,9 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import NewsSearchPage from './NewsSearchPage';
+
 
 describe('news search page', () => {
     it('displays a list of news articles, updating results based on user input', async () => {

@@ -18,4 +18,3 @@
 ## Services 
     - Api call function to get all articles
     - Api call function to get articles by user input term
-
