@@ -15,7 +15,7 @@ export default function Article({ title, author, snip, source, link }) {
 
 Article.propTypes = {
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    author: PropTypes.string,
     snip: PropTypes.string.isRequired,
     source: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,

@@ -10,7 +10,7 @@ export default function ArticleList({ articles }) {
             <hr />
             {articles.map((article) => {
                 return (
-                    <Article
+                    <Article key={article.title}
                         title={article.title}
                         author={article.author}
                         snip={article.snip}
@@ -26,7 +26,7 @@ ArticleList.propTypes = {
     articles: PropTypes.arrayOf(
         PropTypes.shape({
             title: PropTypes.string.isRequired,
-            author: PropTypes.string.isRequired,
+            author: PropTypes.string,
             snip: PropTypes.string.isRequired,
             source: PropTypes.string.isRequired,
             link: PropTypes.string.isRequired,
