@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 export default function ArticleList({ articles }) {
     return (
         <ul aria-label='article-list'>
-            <h3>List of Articles</h3>
+            <h2>List of Articles</h2>
             <hr />
             <hr />
             {articles.map((article) => {
