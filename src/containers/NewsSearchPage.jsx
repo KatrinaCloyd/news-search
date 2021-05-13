@@ -35,7 +35,15 @@ export default class NewsSearchPage extends Component {
 
     render() {
         if (this.state.loading)
-            return <Loading />;
+            return (
+                <>
+                    <SearchForm
+                        search={this.state.searchTerm}
+                        onSearchChange={this.handleSearchTermChange}
+                        onSubmit={this.handleSearchSubmit} />
+                    <Loading />
+                </>
+            );
         return (
             <>
                 <SearchForm
