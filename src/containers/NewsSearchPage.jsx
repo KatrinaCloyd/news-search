@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ArticleList from '../components/search/ArticleList';
 import SearchForm from '../components/search/SearchForm';
-import { fetchNewsArticles, fetchNewsSearch } from '../services/NewsApi';
+import { fetchNewsArticles, fetchNewsSearch } from '../services/newsApi';
 
 export default class NewsSearchPage extends Component {
     state = {
